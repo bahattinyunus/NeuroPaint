@@ -1,142 +1,158 @@
 
 
-# 🖌️ Python Paint Project
+# 🎨 **NeuroPaint – AI-Assisted Creative Canvas**
 
-![Python Paint](https://img.shields.io/badge/Python-Paint-blue?style=for-the-badge\&logo=python)
-
-## 📌 Proje Hakkında
-
-Bu proje, Python kullanılarak yapılmış **basit bir Paint uygulamasıdır**. Eğitim amaçlı hazırlanmıştır ve özellikle **Python GUI (Tkinter)** konusunda deneyim kazanmak isteyenler için uygundur. Kullanıcı, uygulama üzerinde çizim yapabilir, renk seçebilir, fırça boyutunu değiştirebilir ve çizimlerini kaydedebilir.
-
-Bu proje sayesinde öğrenebileceğiniz konular:
-
-* Python ile GUI geliştirme
-* Tkinter kütüphanesinin temel widget’ları
-* Mouse ve klavye olaylarını yakalama
-* Basit renk seçici ve fırça mekanizması oluşturma
-* Canvas üzerinde çizim yapma
+**Çizimin geleceğine hoş geldin.**
+NeuroPaint, klasik Paint deneyimini yapay zekâ ile yeniden tanımlayan vizyoner bir yaratıcı tuvaldir.
+Sadece çizim yapmazsın — çizdikçe öğrenen, seni tamamlayan, sana öneriler sunan bir sistemle çalışırsın.
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🌟 **Öne Çıkan Özellikler**
 
-* **Python 3.x**
-* **Tkinter** (GUI için)
-* **Pillow (PIL)** – Kaydetme ve resim işleme için
+### 🧠 **AI Stroke Prediction**
+
+Sen çizgi çekersin; NeuroPaint çizginin devamını tahmin eder, şekli düzeltir, daha akıcı hâle getirir.
+“Ben senin tarzını çözdüm.” modu.
 
 ---
 
-## 📥 Kurulum
+### 🎨 **Real-Time Style Transfer**
 
-### 1. Python Kurulumu
+Çizimini anında farklı sanat stillerine dönüştür:
 
-Python bilgisayarınızda yüklü değilse [Python resmi sitesinden](https://www.python.org/downloads/) en son sürümü indirip kurabilirsiniz.
+* Van Gogh
+* Cyberpunk
+* Pixar
+* Minimal UI/UX
+  Tek tıkla vizyonu değiştir.
 
-### 2. Gerekli Kütüphaneleri Yükleme
+---
 
-Terminal veya komut istemcisine şu komutları yazın:
+### 🟦 **Shape Intelligence**
 
-```bash
-pip install pillow
+Eliyle çizdiğin yamuk şekilleri tespit eder → kusursuz geometrik forma dönüştürür.
+Tasarımcıların dua sebebi.
+
+---
+
+### 🖼️ **Image → Editable Sketch**
+
+Yüklediğin fotoğrafı otomatik olarak çizilebilir, düzenlenebilir bir skeç formatına çevirir.
+
+---
+
+### 🔍 **AI Zoom & Infinite Canvas**
+
+Yaklaştıkça yeni detaylar üretir.
+Tuval sonsuzdur; fikirlerin gibi.
+
+---
+
+### 🗂️ **Smart Layer Naming**
+
+Katmanlara otomatik isim verir:
+
+* “Ana karakter – yüz ovali”
+* “Background mountain 01”
+* “Shadow cluster”
+
+Organize bir sanat ortamı için birebir.
+
+---
+
+## 🛠️ **Teknoloji Yığını**
+
+### **Frontend**
+
+* React
+* Konva.js / Fabric.js (canvas engine)
+* Zustand
+* TailwindCSS
+
+### **Backend**
+
+* FastAPI
+* OpenAI API (gpt-4o + vision)
+* Diffusion modelleri (style transfer)
+* WebSocket destekli gerçek zamanlı çizim modu
+
+### **Diğer**
+
+* Docker Compose
+* Supabase / S3 (dosya depolama)
+* PostgreSQL + Prisma (veritabanı)
+
+---
+
+## 📁 **Proje Yapısı**
+
+```
+neuropaint/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── canvas/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── store/
+│   │   └── utils/
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── ai/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   └── utils/
+│   └── pyproject.toml
+│
+└── docker-compose.yml
 ```
 
-Tkinter genellikle Python ile birlikte gelir. Eğer gelmediyse:
-
-* Windows: Python yükleyici ile “Tkinter” seçeneğini işaretleyin
-* Linux: `sudo apt-get install python3-tk`
-
 ---
 
-## 🚀 Başlatma
+## ⚙️ **Kurulum**
 
-Projeyi indirdikten sonra terminal veya IDE üzerinden şu şekilde çalıştırabilirsiniz:
+### 1. Ortam değişkenlerini hazırla
 
-```bash
-python paint.py
+```
+cp .env.example .env
 ```
 
-Uygulama açıldığında bir pencere göreceksiniz. Artık çizim yapabilirsiniz!
+### 2. Docker Compose ile çalıştır
 
----
-
-## 🖍️ Özellikler
-
-### 1. Çizim Yapma
-
-* Sol fare tuşuna basılı tutarak çizim yapabilirsiniz.
-* Fırça boyutu varsayılan olarak 5’tir ama ayarlanabilir.
-
-### 2. Renk Seçme
-
-* Renk paleti sayesinde fırçanın rengini değiştirebilirsiniz.
-* Örnek renkler: kırmızı, mavi, yeşil, sarı, siyah.
-
-### 3. Fırça Boyutu
-
-* Küçük, orta ve büyük fırça seçenekleri ile çizimlerinizi özelleştirebilirsiniz.
-
-### 4. Temizleme
-
-* Canvas’ı tamamen temizlemek için “Clear” butonuna basabilirsiniz.
-
-### 5. Kaydetme
-
-* Çizimlerinizi `.png` formatında kaydedebilirsiniz.
-* Pillow kütüphanesi sayesinde canvas içeriğini görüntü dosyası olarak saklar.
-
----
-
-## 📚 Kod Yapısı ve Açıklamalar
-
-Projede temel olarak **Tkinter Canvas** kullanılır. İşte kısa açıklama:
-
-```python
-import tkinter as tk
-from tkinter import colorchooser
-from PIL import ImageGrab
+```
+docker compose up --build
 ```
 
-* **Canvas**: Çizim alanı sağlar.
-* **Mouse events**: `<B1-Motion>` olayı ile kullanıcı fareyi hareket ettirirken çizim yapılır.
-* **colorchooser.askcolor()**: Kullanıcıya renk seçme penceresi sunar.
-* **ImageGrab**: Canvas’ı resim olarak kaydetmek için kullanılır.
+### 3. URL’ler
 
-Örnek çizim fonksiyonu:
-
-```python
-def paint(event):
-    x1, y1 = (event.x - brush_size), (event.y - brush_size)
-    x2, y2 = (event.x + brush_size), (event.y + brush_size)
-    canvas.create_oval(x1, y1, x2, y2, fill=current_color, outline=current_color)
-```
-
-* `event.x` ve `event.y` fare pozisyonunu verir.
-* `create_oval` ile küçük daireler çizilir, bu da fırça efekti oluşturur.
+* **Frontend:** [http://localhost:5173](http://localhost:5173)
+* **Backend:** [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## 💡 Eğitim Notları
+## 🗺️ **Roadmap**
 
-* **Tkinter Widget’ları**: `Button`, `Canvas`, `Label`, `Scale`
-* **Event Binding**: `canvas.bind("<B1-Motion>", paint)`
-* **Global değişken kullanımı**: Fırça rengi ve boyut gibi değişkenleri global tutmak işleri kolaylaştırır.
-* **Pillow ile kaydetme**: Tkinter canvas’ı direkt kaydedemez, ImageGrab ile ekran görüntüsü alınır.
-
-Bu proje, **temel GUI ve event-driven programlama** kavramlarını pekiştirmek için mükemmeldir.
-
----
-
-## 📌 Geliştirme Önerileri
-
-* Farklı fırça şekilleri ekleyin (çizgi, kare, üçgen)
-* Arka plan resimleri ekleyin
-* Katman (layer) sistemi oluşturun
-* Undo/Redo fonksiyonu ekleyin
-* Daha fazla renk paleti ve özel renk seçici
+* [ ] Real-time multiplayer canvas
+* [ ] Voice-to-art komutları
+* [ ] AI Brush (çizgileri otomatik optimize eder)
+* [ ] Color Harmony Engine
+* [ ] Timeline: çizim geçmişinin katman katman takibi
+* [ ] Export to PSD
+* [ ] Mobile/Tablet özel arayüz
 
 ---
 
-## 📝 Lisans
+## 🤝 **Katkı**
 
-Bu proje eğitim amaçlıdır. İstediğiniz gibi kullanabilir, geliştirebilir ve paylaşabilirsiniz.
+Pull request’ler memnuniyetle kabul edilir.
+Vizyonu büyütmek isteyen herkes projeye katkıda bulunabilir.
+
+---
+
+## 📜 **Lisans**
+
+MIT License.
 
