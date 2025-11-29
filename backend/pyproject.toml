@@ -1,0 +1,20 @@
+[project]
+name = "neuropaint-backend"
+version = "0.1.0"
+description = "Backend for NeuroPaint - AI Assisted Creative Canvas"
+authors = [
+    {name = "NeuroPaint Team", email = "info@neuropaint.com"},
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    "python-multipart>=0.0.6",
+    "pillow>=10.0.0",
+    "openai>=1.0.0",
+    "pydantic-settings>=2.0.0",
+]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
