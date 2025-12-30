@@ -1,4 +1,4 @@
-![NeuroPaint Banner](https://images.unsplash.com/photo-1620641788421-7f1c33b74304?q=80&w=2500&auto=format&fit=crop)
+![NeuroPaint Banner](assets/banner.jpg)
 
 # 🎨 **NeuroPaint – AI Destekli Yaratıcı Tuval**
 
