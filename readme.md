@@ -182,6 +182,24 @@ Bu proje, açık kaynak dünyasının en özgürlükçü lisanslarından biri ol
 
 ---
 
+
+---
+
+## 👨‍💻 **Mimar ve Geliştirici**
+
+NeuroPaint, teknoloji ve sanatı birleştirerek sınırları zorlamayı hedefleyen **IT Architect** [Bahattin Yunus Çetin](https://github.com/bahattinyunus) tarafından geliştirilmektedir. 
+
+Trabzon, Of'ta akademik çalışmalarını sürdüren Çetin, yazılım mimarisi ve yapay zeka sistemleri üzerine odaklanarak, karmaşık problemleri estetik ve yenilikçi çözümlere dönüştürme vizyonuyla hareket etmektedir.
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-Bahattin%20Yunus%20Çetin-181717?style=for-the-badge&logo=github)](https://github.com/bahattinyunus)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Bahattin%20Yunus%20Çetin-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/bahattinyunus/)
+
+</div>
+
+---
+
 <p align="center">
-  <sub>❤️ ile <strong>NeuroPaint Team</strong> tarafından tasarlanmış ve geliştirilmiştir. Sanat için, gelecek için.</sub>
+  <sub>❤️ ile <strong>Bahattin Yunus Çetin</strong> tarafından tasarlanmış ve geliştirilmiştir. Sanat için, gelecek için.</sub>
 </p>
